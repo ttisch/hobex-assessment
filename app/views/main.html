@@ -1,0 +1,123 @@
+<!-- START: Create Customer Form -->
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Neuer Kunde</h3>
+  </div>
+  <div class="panel-body">
+    <form class="form-horizontal" ng-submit="main.newCustomer()">
+      <div class="form-group">
+        <label for="tbCompany" class="col-sm-2 control-label">Firma</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="tbCompany" ng-model="newCust.Company" placeholder="Company" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="tbAddress" class="col-sm-2 control-label">Addresse</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="tbAddress" ng-model="newCust.Address" placeholder="Addresse">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="tbCity" class="col-sm-2 control-label">PLZ / Stadt</label>
+        <div class="col-sm-2">
+          <input type="text" class="form-control" id="tbZIP" ng-model="newCust.ZIP" placeholder="PLZ">
+        </div>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" id="tbCity" ng-model="newCust.City" placeholder="Stadt">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="tbCountry" class="col-sm-2 control-label">Land</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="tbCountry" ng-model="newCust.Country" placeholder="Land">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="tbEmail" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="tbEmail" ng-model="newCust.Email" placeholder="Email" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="tbPhone" class="col-sm-2 control-label">Telefon</label>
+        <div class="col-sm-10">
+          <input type="phone" class="form-control" id="tbPhone" ng-model="newCust.Phone" placeholder="Telefon">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="tbFax" class="col-sm-2 control-label">Fax</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="tbFax" ng-model="newCust.Fax" placeholder="Fax">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="tbTaxNumber" class="col-sm-2 control-label">Steuernummer</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="tbTaxNumber" ng-model="newCust.TaxNumber" placeholder="Steuernummer">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-default">Anlegen</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- END: Create Customer Form -->
+
+<!-- START: Create Contact Form -->
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">Neuer Kontakt</h3>
+  </div>
+  <div class="panel-body">
+    <form class="form-horizontal" ng-submit="main.newContact()">
+      <div class="form-group">
+        <label for="tbCustomerID" class="col-sm-2 control-label">CustomerID</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="tbCustomerID" ng-model="newCont.CustomerID" placeholder="CustomerID" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="tbName" class="col-sm-2 control-label">Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="tbName" ng-model="newCont.Name" placeholder="Name" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="tbAddress" class="col-sm-2 control-label">Addresse</label>
+        <div class="col-sm-10">
+          <input type="address" class="form-control" id="tbAddress" ng-model="newCont.Address" placeholder="Addresse">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="tbCity" class="col-sm-2 control-label">PLZ / Stadt</label>
+        <div class="col-sm-2">
+          <input type="zip" class="form-control" id="tbZIP" ng-model="newCont.PLZ" placeholder="PLZ">
+        </div>
+        <div class="col-sm-8">
+          <input type="city" class="form-control" id="tbCity" ng-model="newCont.City" placeholder="Stadt">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="tbCountry" class="col-sm-2 control-label">Land</label>
+        <div class="col-sm-10">
+          <input type="country" class="form-control" id="tbCountry" ng-model="newCont.Country" placeholder="Land">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="tbBirthday" class="col-sm-2 control-label">Geburtsdatum</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="tbBirthday" ng-model="newCont.Birthday" placeholder="Geburtsdatum">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-default">Anlegen</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- END: Create Contact Form -->
